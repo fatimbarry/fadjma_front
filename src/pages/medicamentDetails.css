@@ -1,0 +1,152 @@
+.medicament-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.loading-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.loading-spinner {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+.segment {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+
+.blue {
+    border-top-color: #add8e6;
+    transform: rotate(0deg);
+}
+
+.green {
+    border-right-color: #90ee90;
+    transform: rotate(90deg);
+}
+
+.red {
+    border-bottom-color: #ffcccb;
+    transform: rotate(180deg);
+}
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Arial, sans-serif;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.medicament-title {
+    font-size: 30px;
+    color: #333;
+    margin-top:  50px;
+    margin-right: 50px;
+}
+
+.content {
+    display: flex;
+    gap: 40px;
+}
+
+.image-container {
+    position: relative;
+    //width: 50%;
+    width: 300px; /* Largeur fixe */
+    height: auto; /* Hauteur fixe */
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-button.left {
+    left: -35px;
+    margin-top: 5px;
+}
+
+.nav-button.right {
+    //right: 2px;
+    margin-top: 5px;
+}
+
+.info {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.info h2 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.info p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.description {
+    margin-top: 30px;
+}
+
+.description h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
